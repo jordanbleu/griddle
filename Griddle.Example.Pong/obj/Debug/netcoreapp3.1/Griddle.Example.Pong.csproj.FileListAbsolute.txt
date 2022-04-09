@@ -21,3 +21,4 @@ C:\Users\JordanBleu\source\repos\Griddle\Griddle.Example.Pong\obj\Debug\netcorea
 C:\Users\JordanBleu\source\repos\Griddle\Griddle.Example.Pong\obj\Debug\netcoreapp3.1\Griddle.Example.Pong.dll
 C:\Users\JordanBleu\source\repos\Griddle\Griddle.Example.Pong\obj\Debug\netcoreapp3.1\Griddle.Example.Pong.pdb
 C:\Users\JordanBleu\source\repos\Griddle\Griddle.Example.Pong\obj\Debug\netcoreapp3.1\Griddle.Example.Pong.genruntimeconfig.cache
+C:\Users\JordanBleu\source\repos\Griddle\Griddle.Example.Pong\obj\Debug\netcoreapp3.1\Griddle.Example.Pong.csproj.AssemblyReference.cache

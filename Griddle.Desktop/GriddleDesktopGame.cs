@@ -81,7 +81,8 @@ namespace Griddle.Desktop
                 griddleGame.Update();
                 lastUpdate = DateTime.Now;
             }
-            
+
+            Window.Title = griddleGame.GameTitle;
             
             base.Update(gameTime);
         }

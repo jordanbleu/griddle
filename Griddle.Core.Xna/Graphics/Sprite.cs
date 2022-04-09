@@ -1,9 +1,10 @@
 ﻿using Griddle.Core.Xna.Math;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Griddle.Core.Xna.Graphics
 {
-    public class Sprite
+    public class Sprite : IDrawable
     {
 
         /// <summary>
@@ -25,7 +26,6 @@ namespace Griddle.Core.Xna.Graphics
         /// The actual pixels of the sprite
         /// </summary>
         public List<SpritePixel> Pixels { get; set; }
-
 
     }
 }

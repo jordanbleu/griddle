@@ -1,20 +1,33 @@
 ﻿using Griddle.Core.Xna.Graphics;
+using Griddle.Core.Xna.Input;
 using Griddle.Core.Xna.Math;
-using System.Threading;
 
 namespace Griddle.Core.Xna.Runtime
 {
     public abstract class GriddleGame
     {
-
         private bool isInitialized = false;
 
-        public GriddleGame(Vector2 size)
+        private IInputHandler inputHandler; 
+        
+        /// <summary>
+        /// Returns the injected input handler for checking user inputs
+        /// </summary>
+        public IInputHandler Input { get { return inputHandler; } }  
+
+        public GriddleGame(Vector2 size, IInputHandler inputHandler = null)
         {
             Grid = new Grid(new Vector2(size.X,size.Y));
+            this.inputHandler = inputHandler;
         }
 
         public Grid Grid { get; private set; }
+
+        /// <summary>
+        /// The title of your game.  What this does varies based on the runtime, but for Desktop games this will 
+        /// be shown in the title bar.
+        /// </summary>
+        public string GameTitle { get; set; }
 
         /// <summary>
         /// Determines how fast updates should occur.  
@@ -32,6 +45,7 @@ namespace Griddle.Core.Xna.Runtime
         /// Perform game initialization here.
         /// </summary>
         public abstract void GameInitialize();
+
 
         /// <summary>
         /// Call this method to run your game.  
@@ -55,11 +69,17 @@ namespace Griddle.Core.Xna.Runtime
 
         public void Update()
         {
+            // update the inputs if we have an input handler
+            if (inputHandler != null) {
+                inputHandler.InternalUpdate();
+            }
+
             GameUpdate();
 
             // update pixels on the grid based on the active sprites
             Grid.Refresh();
         }
+
 
     }
 }

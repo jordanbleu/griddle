@@ -1,5 +1,4 @@
-﻿
-using Griddle.Core.Xna.Graphics;
+﻿using Griddle.Core.Xna.Graphics;
 using Griddle.Core.Xna.Math;
 using Griddle.Core.Xna.Runtime;
 using System.Collections.Generic;
