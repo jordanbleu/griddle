@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+98EWq6kjhl0MNAf5glj4AXwhlFWTv0q6vBTPo+UyXmrBM5LtIJhnz547/lzzzGnLD2lJdXz/ktRPQGttNY61g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JordanBleu\\source\\repos\\Griddle\\Griddle.Example.HelloWorld\\Griddle.Example.HelloWorld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JordanBleu\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\JordanBleu\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}
