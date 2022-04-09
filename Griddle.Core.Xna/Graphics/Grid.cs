@@ -16,14 +16,13 @@ namespace Griddle.Core.Xna.Graphics
             this.size = gridSize;
         }
 
-
         public Vector2 Size { get => size; }
 
         // The actual pixels on the grid
         public Pixel[][] Pixels { get; private set; }
 
-        // sprites active in the grid
-        public List<Sprite> Sprites { get; set; } = new List<Sprite>();
+        // Sprites active in the grid.  Not necessarily basic sprites, could be actors, etc
+        public List<IDrawable> Sprites { get; set; } = new List<IDrawable>();
 
         /// <summary>
         /// Update the grid with the current state of the sprites
@@ -40,8 +39,8 @@ namespace Griddle.Core.Xna.Graphics
             {
                 foreach (var pixel in sprite.Pixels)
                 {
-                    var px = pixel.Position.X + sprite.Position.X + sprite.Anchor.X;
-                    var py = pixel.Position.Y + sprite.Position.Y + sprite.Anchor.Y;
+                    var px = pixel.Position.X + sprite.Position.X;
+                    var py = pixel.Position.Y + sprite.Position.Y;
 
                     if (InBounds(px, py))
                     {

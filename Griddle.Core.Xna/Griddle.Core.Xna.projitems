@@ -18,9 +18,14 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Constants\GriddleConstants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Graphics\Grid.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics\IDrawable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Graphics\Pixel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Graphics\Sprite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Graphics\SpritePixel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Input\IInputHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\Actor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\SizeExtensions.cs" />
+    <Compile Include="..\Griddle.Core.Xna\Logic\CollisionExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Runtime\GriddleGame.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Math\Vector2.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Runtime\IGriddleRuntime.cs" />
