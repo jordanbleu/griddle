@@ -33,6 +33,8 @@ To run the game, simply go to your monogame Program.cs class and run the game li
 
 (where HelloWorldGame is the name of your game class).
 
+The 'size' property is the size of your grid.  In this example, there are 16 x 16 pixels to work with.  
+
 ## Concepts
 
 ### The grid
